@@ -97,6 +97,16 @@ docker run -d --name rabbitmq \
 curl http://localhost:15672
 ```
 
+
+
+docker exec -it rabbitmq rabbitmq-plugins enable rabbitmq_stomp
+docker restart rabbitmq
+docker exec -it rabbitmq rabbitmq-plugins list
+
+### credenatils:
+guest / guest
+
+
 #### Option 2: Local Installation
 
 1. Download and install RabbitMQ from [rabbitmq.com](https://www.rabbitmq.com/download.html)
